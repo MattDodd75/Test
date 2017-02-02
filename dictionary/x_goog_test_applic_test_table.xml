@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Test Table" max_length="40" name="x_goog_test_applic_test_table" type="collection">
+        <element label="Column 1" max_length="40" name="column_1" type="string"/>
+        <element label="Column 2" max_length="20" name="column_2" type="currency"/>
+        <element label="Column 3" max_length="32" name="column_3" reference="sys_user" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="column_3"/>
+        </index>
+    </element>
+</database>
